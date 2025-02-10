@@ -9,6 +9,8 @@
   <p [style]="description">Description</p>
 </div>
 
+<h2 [class.textColor]="redText == 'yes'">Title</h2>
+
 <button (click)="incrementCounter()">Increament</button>
 <!--Save Counter Value-->
 <p>Counter: {{ counter }}</p>
