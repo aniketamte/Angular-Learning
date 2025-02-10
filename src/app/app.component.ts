@@ -5,8 +5,18 @@ import { RouterOutlet } from '@angular/router';
   selector: 'app-root',
   imports: [RouterOutlet],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  title = '1.Introduction';
+  title: string= "1.Introduction";
+  myBtn: string= "My Button";
+
+  //Attribute Binding
+  isDisabled: boolean = true;
+  angularImage: string = '../assets/angular.png';
+
+  //Style Binding
+  bgColor: string = "green";
+  titleColor: string = "white";
+  description: string = 'font-size: 30px; color: red';
 }
