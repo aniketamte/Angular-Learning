@@ -10,6 +10,7 @@ import { RouterOutlet } from '@angular/router';
 export class AppComponent {
   title: string= "1.Introduction";
   myBtn: string= "My Button";
+  counter: number = 0;
 
   //Attribute Binding
   isDisabled: boolean = true;
@@ -19,4 +20,9 @@ export class AppComponent {
   bgColor: string = "green";
   titleColor: string = "white";
   description: string = 'font-size: 30px; color: red';
+
+  //Event Binding
+  incrementCounter() {
+    this.counter++;
+  }
 }
